@@ -1,0 +1,86 @@
+<html>
+
+<head><title>salary slip</title>
+
+<script>
+
+function sum()
+{
+let a=document.getElementById("t1").value;   
+let b=document.getElementById("t2").value;
+let c=document.getElementById("t3").value;
+let d=(parseInt(a)+parseInt(b))-parseInt(c);
+document.getElementById("t4").innerHTML=d;  
+}
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+<style>
+
+.d1
+{
+
+border:2px solid cyan;
+width:300px;
+padding:50px;
+margin-left:200px;
+margin-top:100px;
+background-color:pink;
+color:black;
+}
+
+
+
+
+</style>
+
+
+
+
+</head>
+<body bgcolor="#E75480">
+<div class="d1">
+<p><h1 align="center">Salary Slip</h1>
+<p>Enter your employee id: </p>
+<input type="text" placeholder=" ">
+<p>Enter your Name:  </p>
+<input type="text" placeholder=" ">
+
+<p>Enter Basic Salary: </p>
+<input id="t1"  type="text"><br>
+
+<p>Enter HRA: </p>
+<input id="t2"  type="text"><br>
+
+<p>Enter PF: </p>
+<input id="t3" type="text" ><br>
+
+
+
+
+
+
+
+<p id="t4"> </p>
+<button onclick="sum()">Net Salary</button><br><br>
+
+</div>
+
+
+</body >
+
+
+
+
+</html>
